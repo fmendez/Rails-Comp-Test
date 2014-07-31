@@ -1,0 +1,14 @@
+<% charges.each do |c| %>
+  <tr>
+    <td>
+      <%= c.customer.firstname %>
+    </td>
+    <td>
+      <%= c.amount %>
+    </td>
+    <td>
+      <%= c.created %>
+    </td>
+  </tr>
+<%end%>
+

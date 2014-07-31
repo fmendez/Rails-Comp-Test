@@ -1,0 +1,43 @@
+<h1>Failed Charges</h1>
+<table border="0" id="failed">
+  <thead>
+    <tr>
+      <th>Customer Name |</th>
+      <th>Charge Amount |</th>
+      <th>Date when the charge failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render partial: "charges", locals: {charges: @failed_charges}%>
+  </tbody>
+</table>
+<hr />
+<h1>Disputed Charges</h1>
+<table border="0" id="disputed">
+  <thead>
+    <tr>
+      <th>Customer Name |</th>
+      <th>Charge Amount |</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render partial: "charges", locals: {charges: @disputed_charges}%>
+  </tbody>
+
+</table>
+<hr />
+
+<h1>Successful Charges</h1>
+<table border="0" id="success">
+  <thead>
+    <tr>
+      <th>Customer Name |</th>
+      <th>Charge Amount |</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render partial: "charges", locals: {charges: @successful_charges}%>
+  </tbody>
+</table>
